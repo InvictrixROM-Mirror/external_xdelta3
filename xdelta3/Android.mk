@@ -21,7 +21,7 @@ LOCAL_CFLAGS += $(xdelta3_cflags)
 LOCAL_SRC_FILES := xdelta3.c
 LOCAL_C_INCLUDES:= $(LOCAL_PATH)/
 LOCAL_MODULE := libxdelta3
-include $(BUILD_STATIC_LIBRARY)
+include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
 
@@ -36,5 +36,5 @@ include $(CLEAR_VARS)
 LOCAL_CFLAGS += $(xdelta3_cflags) -DXD3_MAIN=1
 LOCAL_SRC_FILES := xdelta3.c
 LOCAL_C_INCLUDES:= $(LOCAL_PATH)/
-LOCAL_MODULE := xdelta3_host
+LOCAL_MODULE := xdelta3
 include $(BUILD_HOST_EXECUTABLE)
